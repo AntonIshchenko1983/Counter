@@ -33,7 +33,7 @@
                                     <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonPlus" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xw8-Hc-AWx"/>
+                                    <action selector="onTapButtonPlus" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5K-PA-KCF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRf-eV-btn">
@@ -46,20 +46,7 @@
                                     <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rcg-Sf-JO3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf6-md-x5I">
-                                <rect key="frame" x="20" y="306" width="357" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemMintColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="( 0 ) Reset">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="26"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonZero" destination="BYZ-38-t0r" eventType="touchUpInside" id="a9i-Na-NBr"/>
+                                    <action selector="onTapButtonMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHN-g7-Pbw"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="История изменения" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtp-pm-3RU">
@@ -70,6 +57,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf6-md-x5I">
+                                <rect key="frame" x="18" y="306" width="357" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="( 0 ) Reset">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="26"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onTapButtonZero" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ura-T3-FjA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
